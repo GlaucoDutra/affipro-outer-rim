@@ -31,7 +31,7 @@
     }
   </script>
 <script>
-  (function(){var id=new URL(location.href).searchParams.get('click_id');if(!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id||''))return;document.querySelectorAll('a[href*="checkout"]').forEach(function(a){var u=new URL(a.href);u.searchParams.set('click_id',id);a.href=u.href})})();
+  (function(){var id=new URL(location.href).searchParams.get('click_id');if(!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id||''))return;document.querySelectorAll('a[href*="checkout"]').forEach(function(a){var u=new URL(a.href);u.searchParams.set('click_id',id);u.searchParams.set('v','2');a.href=u.href})})();
 </script>
 </body>
 </html>
