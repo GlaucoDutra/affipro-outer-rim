@@ -6,7 +6,9 @@
   <title>Outer Rim Expeditions | Journeys Beyond the Known</title>
   <meta name="description" content="Discover remarkable worlds with Outer Rim Expeditions, a fictional Star Wars-inspired travel brand and AffiPro demo company.">
   <link rel="stylesheet" href="/style.css">
-  <script src="/affipro-client.js?id=px_1b091f2840ec4ecdae72df257e743896"></script>
+  <script>
+  (function(){var key='px_1b091f2840ec4ecdae72df257e743896',names=['click_id','affipro_click_id','cid'],storedName='affipro_click_id',confirmedName='affipro_confirmed_click_id',ttl=2592000;function getCookie(n){var p=document.cookie.split('; ').find(function(x){return x.indexOf(n+'=')===0});if(!p)return'';try{return decodeURIComponent(p.slice(n.length+1))}catch(_){return''}}function put(n,v){document.cookie=n+'='+encodeURIComponent(v)+'; Max-Age='+ttl+'; Path=/; SameSite=Lax; Secure';try{localStorage.setItem(n,v)}catch(_){}}function getStored(n){try{return localStorage.getItem(n)||''}catch(_){return''}}function send(event,extra){var u=new URL('/x',location.origin),clean=new URL(location.href);names.forEach(function(n){clean.searchParams.delete(n)});clean.hash='';u.searchParams.set('id',key);u.searchParams.set('event',event);u.searchParams.set('page_url',clean.origin+clean.pathname+clean.search);u.searchParams.set('ts',new Date().toISOString());Object.keys(extra||{}).forEach(function(n){if(extra[n])u.searchParams.set(n,extra[n])});var img=new Image(1,1);img.src=u.toString()}var q=new URL(location.href).searchParams,click=names.map(function(n){return q.get(n)||''}).find(Boolean)||'';if(click)put(storedName,click);var icon=document.querySelector('link[rel="icon"]');send('valid_page',{favicon_url:icon&&icon.href||location.origin+'/favicon.ico'});click=click||getCookie(storedName)||getStored(storedName);if(/^[0-9a-f-]{36}$/i.test(click)&&getCookie(confirmedName)!==click&&getStored(confirmedName)!==click){send('confirmed_click',{click_id:click});put(confirmedName,click)}})();
+  </script>
   <style>:root{--accent:#f0b870;--panel:#412416;--glow:#8d4b22}</style>
 </head>
 <body>

@@ -5,7 +5,9 @@
   <meta name="theme-color" content="#0b0710">
   <title>Demo checkout | Outer Rim Expeditions</title>
   <link rel="stylesheet" href="/style.css">
-  <script src="/affipro-client.js?id=px_1b091f2840ec4ecdae72df257e743896"></script>
+  <script>
+  (function(){var key='px_1b091f2840ec4ecdae72df257e743896',names=['click_id','affipro_click_id','cid'],storedName='affipro_click_id',confirmedName='affipro_confirmed_click_id',ttl=2592000;function getCookie(n){var p=document.cookie.split('; ').find(function(x){return x.indexOf(n+'=')===0});if(!p)return'';try{return decodeURIComponent(p.slice(n.length+1))}catch(_){return''}}function put(n,v){document.cookie=n+'='+encodeURIComponent(v)+'; Max-Age='+ttl+'; Path=/; SameSite=Lax; Secure';try{localStorage.setItem(n,v)}catch(_){}}function getStored(n){try{return localStorage.getItem(n)||''}catch(_){return''}}function send(event,extra){var u=new URL('/x',location.origin),clean=new URL(location.href);names.forEach(function(n){clean.searchParams.delete(n)});clean.hash='';u.searchParams.set('id',key);u.searchParams.set('event',event);u.searchParams.set('page_url',clean.origin+clean.pathname+clean.search);u.searchParams.set('ts',new Date().toISOString());Object.keys(extra||{}).forEach(function(n){if(extra[n])u.searchParams.set(n,extra[n])});var img=new Image(1,1);img.src=u.toString()}var q=new URL(location.href).searchParams,click=names.map(function(n){return q.get(n)||''}).find(Boolean)||'';if(click)put(storedName,click);var icon=document.querySelector('link[rel="icon"]');send('valid_page',{favicon_url:icon&&icon.href||location.origin+'/favicon.ico'});click=click||getCookie(storedName)||getStored(storedName);if(/^[0-9a-f-]{36}$/i.test(click)&&getCookie(confirmedName)!==click&&getStored(confirmedName)!==click){send('confirmed_click',{click_id:click});put(confirmedName,click)}})();
+  </script>
   <style>
     .checkout { max-width:720px; margin:8vh auto; padding:clamp(24px,5vw,54px); border:1px solid var(--line,#5b3a24); border-radius:24px; background:rgba(24,15,12,.92); box-shadow:0 24px 80px #0008 }
     .checkout h1 { margin:8px 0 12px; font-size:clamp(32px,6vw,54px); line-height:1.05 }
